@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true
+  }
+}

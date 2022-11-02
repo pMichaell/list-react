@@ -1,0 +1,45 @@
+{
+  "name": "teacodetask",
+  "version": "1.0.0",
+  "description": "Recruitment task for teacode",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel public/index.html --open",
+    "test": "jest"
+  },
+  "keywords": ["recruitment", "task"],
+  "author": "Michal Pawlowicz",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-bootstrap-icons": "^1.9.1",
+    "react-dom": "^18.2.0",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-router-dom": "^6.4.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.2.0",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "eslint": "^8.26.0",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-simple-import-sort": "^8.0.0",
+    "eslint-plugin-testing-library": "^5.9.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "jest": "^29.2.2",
+    "jest-environment-jsdom": "^29.2.2",
+    "msw": "^0.47.4",
+    "parcel": "^2.7.0",
+    "prettier": "^2.7.1",
+    "process": "^0.11.10",
+    "ts-jest": "^29.0.3",
+    "whatwg-fetch": "^3.6.2"
+  }
+}

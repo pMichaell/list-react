@@ -1,8 +1,6 @@
 import ListGroup from "react-bootstrap/ListGroup";
 import Stack from "react-bootstrap/Stack";
-
-import { User } from "../types/Types";
-
+import type { User } from "../types/Types";
 import UserAvatar from "./UserAvatar";
 
 const UserElement = ({
@@ -25,7 +23,7 @@ const UserElement = ({
           avatar={avatar}
         />
         <Stack className="justify-content-end">
-          <p className='m-0'>
+          <p className="m-0">
             {first_name} {last_name}
           </p>
           <small>{email}</small>

@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Stack from "react-bootstrap/Stack";
 import { useSearchParams } from "react-router-dom";
-
 import SearchBar from "./components/SearchBar";
 import UsersList from "./components/UsersList";
 import debounce from "./utils/debounce";
@@ -19,6 +18,7 @@ const App = () => {
       setSearchParams({ user: value });
       return;
     }
+
     setSearchParams({});
   };
 

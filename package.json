@@ -4,10 +4,14 @@
   "description": "Recruitment task for teacode",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --fix src/** --ext .tsx,.ts",
     "start": "parcel public/index.html --open",
     "test": "jest"
   },
-  "keywords": ["recruitment", "task"],
+  "keywords": [
+    "recruitment",
+    "task"
+  ],
   "author": "Michal Pawlowicz",
   "license": "ISC",
   "dependencies": {
@@ -26,9 +30,13 @@
     "@types/jest": "^29.2.0",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.41.0",
-    "@typescript-eslint/parser": "^5.41.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
     "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-xo": "^0.42.0",
+    "eslint-config-xo-typescript": "^0.53.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "eslint-plugin-testing-library": "^5.9.1",
@@ -40,6 +48,7 @@
     "prettier": "^2.7.1",
     "process": "^0.11.10",
     "ts-jest": "^29.0.3",
+    "typescript": "^4.8.4",
     "whatwg-fetch": "^3.6.2"
   }
 }

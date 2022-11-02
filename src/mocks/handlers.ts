@@ -1,9 +1,6 @@
 import { rest } from "msw";
-
 import { usersPath } from "../utils/paths";
-
 import mockData from "./mockData";
-
 
 function getUsers() {
   return rest.get(usersPath, (req, res, context) => {

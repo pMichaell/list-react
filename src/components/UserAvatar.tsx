@@ -1,6 +1,5 @@
 import Image from "react-bootstrap/Image";
-
-import { User } from "../types/Types";
+import type { User } from "../types/Types";
 
 const UserAvatar = ({
   avatar,
@@ -19,7 +18,8 @@ const UserAvatar = ({
       style={{ height: "54px", aspectRatio: 1 }}
       className="border border-2 rounded-circle border-white fs-5 d-flex justify-content-center align-items-center"
     >
-      {first_name.charAt(0)}{last_name.charAt(0)}
+      {first_name.charAt(0)}
+      {last_name.charAt(0)}
     </div>
   );
 };

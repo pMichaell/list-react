@@ -3,9 +3,7 @@ import Alert from "react-bootstrap/Alert";
 import ListGroup from "react-bootstrap/ListGroup";
 import Spinner from "react-bootstrap/Spinner";
 import InfiniteScroll from "react-infinite-scroll-component";
-
 import useUsers from "../hooks/useUsers";
-
 import UserElement from "./UserElement";
 
 const checkIsUserActive = (activeUsersIDs: number[], userID: number) => {
@@ -14,7 +12,6 @@ const checkIsUserActive = (activeUsersIDs: number[], userID: number) => {
   );
   return findResult !== undefined;
 };
-
 
 const UsersList = () => {
   const [activeUsersIDs, setActiveUsersIDs] = useState<number[]>([]);
@@ -26,7 +23,6 @@ const UsersList = () => {
     }
   }, [activeUsersIDs]);
 
-
   const onUserClick = (clickedUserID: number) => {
     if (checkIsUserActive(activeUsersIDs, clickedUserID)) {
       setActiveUsersIDs(
@@ -34,6 +30,7 @@ const UsersList = () => {
       );
       return;
     }
+
     setActiveUsersIDs([...activeUsersIDs, clickedUserID]);
   };
 

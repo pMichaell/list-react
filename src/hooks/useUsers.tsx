@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-
-import { User } from "../types/Types";
+import type { User } from "../types/Types";
 import { usersPath } from "../utils/paths";
 
 const compareFn = (a: User, b: User) => {
@@ -11,6 +10,7 @@ const compareFn = (a: User, b: User) => {
   if (nameA < nameB) {
     return -1;
   }
+
   if (nameA > nameB) {
     return 1;
   }
@@ -37,6 +37,7 @@ const filterUsers = (users: User[], searchParams: URLSearchParams) => {
     if (clearedSearchParams) {
       return userFullName.includes(clearedSearchParams);
     }
+
     return true;
   });
 };
@@ -54,9 +55,10 @@ const useUsers = () => {
       setLoading(true);
       try {
         const response = await fetch(usersPath);
-        if(!response.ok) {
+        if (!response.ok) {
           throw new Error();
         }
+
         const data: User[] = await response.json();
         data.sort(compareFn);
         setFetchedUsers(data);
@@ -70,7 +72,6 @@ const useUsers = () => {
 
     fetchUsers();
   }, []);
-
 
   useEffect(() => {
     if (!searchParams.get("user")) {
@@ -86,6 +87,7 @@ const useUsers = () => {
     if (newUsers.length === fetchedUsers.length) {
       setHasMore(false);
     }
+
     setCurrentUsers(newUsers);
   };
 
